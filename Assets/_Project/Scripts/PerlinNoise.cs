@@ -11,7 +11,7 @@ public float scale = 20f;
 public float offsetX = 100f;
 public float offsetY = 100f;
 
-private new Renderer _renderer;
+private Renderer _renderer;
 
 private void Start() {
     _renderer = GetComponent<Renderer>();
