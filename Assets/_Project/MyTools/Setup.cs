@@ -31,6 +31,7 @@ public static class Setup {
         ImportAudioPreviewTool();
         ImportOdinInspectorAndValidator();
         ImportBetterTransform();
+        ImportSceneSelectionTool();
     }
 
     #region Packages
@@ -124,6 +125,11 @@ public static class Setup {
     [MenuItem("Tools/Setup/Packages/Essentials/Scene View Bookmark Tool")]
     public static void ImportSceneViewBookmarkTool() {
         Assets.ImportAsset("Scene View Bookmark Tool.unitypackage", "Essentials");
+    }
+    
+    [MenuItem("Tools/Setup/Packages/Essentials/Scene Selection Tool")]
+    public static void ImportSceneSelectionTool() {
+        Assets.ImportAsset("Scene Selection Tool.unitypackage", "Essentials");
     }
 
     [MenuItem("Tools/Setup/Packages/Essentials/Color Studio")]
