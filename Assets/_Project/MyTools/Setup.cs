@@ -69,14 +69,6 @@ public static class Setup {
         Packages.InstallPackages(new[] {
             "com.unity.shadergraph" });
     }
-    
-    //[MenuItem("Tools/Setup/Install My Favorite Open Source")]
-    //public static void InstallOpenSource() {
-    //    Packages.InstallPackages(new[] {
-    //            "git+https://github.com/KyleBanks/scene-ref-attribute.git",
-    //            "git+https://github.com/starikcetin/Eflatun.SceneReference.git#3.1.1"
-    //        });
-    //}
     #endregion
 
     #region Assets

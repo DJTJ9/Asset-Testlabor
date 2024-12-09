@@ -7,27 +7,24 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: 2D Master Unlit
-  m_Shader: {fileID: -6465566751694194690, guid: 62e0f1f7191a3134d9b2ac0029748e94,
+  m_Name: Embers
+  m_Shader: {fileID: -6465566751694194690, guid: 564ae19e6177a6343b2e67283bcc3684,
     type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
   m_InvalidKeywords: []
-  m_LightmapFlags: 4
+  m_LightmapFlags: 2
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
   stringTagMap: {}
-  disabledShaderPasses: []
+  disabledShaderPasses:
+  - MOTIONVECTORS
   m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -42,15 +39,25 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Distortion: 1
-    - _DistortionScale: 10
-    - _DistortionStrength: 0.02
-    - _Pixel_Resolution: 16
-    - _Pixelation: 1
+    - _CellDensity: 5
+    - _GradientNoise_Scale: 20
+    - _HeigthTolerance: 0.269
+    - _PulseSpeed: 0.25
+    - _QueueControl: 0
+    - _QueueOffset: 0
+    - _SimpleNoise_Scale: 80
+    - _StepMax: 0.182
+    - _StepMin: 0.0509
+    - _VoronoiNoise_CellDensity: 2
     m_Colors:
-    - _DistortionScrollDirection: {r: 0.15, g: 0, b: 0, a: 0}
+    - _BaseColor: {r: 2.9960792, g: 0.72832865, b: 0, a: 1}
+    - _Direction: {r: -0.1, g: -0.25, b: 0, a: 0}
+    - _GradientNoise_Direction: {r: -0.125, g: -0.35, b: 0, a: 0}
+    - _SimpleNoise_Direction: {r: -0.125, g: -0.15, b: 0, a: 0}
+    - _VoronoiNoise_Direction: {r: -0.125, g: -0.2, b: 0, a: 0}
   m_BuildTextureStacks: []
---- !u!114 &1021429559415515279
+  m_AllowLocking: 1
+--- !u!114 &1257709093666717160
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
@@ -62,4 +69,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  version: 7
+  version: 9
